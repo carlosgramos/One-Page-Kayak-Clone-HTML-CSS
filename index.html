@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Flight for Flights</title>
+</head>
+
+<body>
+    <!-- beginning of wrapper -->
+    <div id="wrapper">
+        <!-- tabs -->
+        <ul id="destinations">
+            <li id="offset"></li>
+            <li id="tab-1">
+                <div class="tab">
+                    <i class="fa fa-fighter-jet fa-2x fighter-jet" aria-hidden="true">
+                    </i>
+                    <div class="flight-date">
+                        <h6 class="to-from">NYC - REK</h6>
+                        <h6>Apr 7 - 21</h6>
+                    </div>
+                </div>
+            </li>
+            <li id="tab-2">
+                <div class="tab">
+                    <i class="fa fa-fighter-jet fa-2x fighter-jet" aria- hidden="true">
+                    </i>
+                    <div class="flight-date">
+                        <h6 class="to-from">NYC - REK</h6>
+                        <h6>Aug 5 - 19</h6>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- end of tabs -->
+
+        <!--  begin search bar -->
+        <ul class="search">
+            <li id="depart-arrive">
+              <input id="depart" type="text" name="name" value="" placeholder="From">
+              <input id="arrive" type="text" name="name" value="" placeholder="To" >
+            </li>
+            <li id="search-date-range" class="destinations">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <input id="depart-date" type="text" name="name" value="">
+                <input id="arrive-date" type="text" name="name" value="">
+            </li>
+            <li id="amount-of-days" class="destinations">
+              <span>15 days x</span>
+              <button class="button-style" type="button">Search</button>
+            </li>
+            <li id="plus-sign">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </li>
+        </ul>
+        <!--   end search bar -->
+
+        <!-- main content    -->
+        <div class="container">
+            <div class="row" id="main">
+                <div class="col-3">
+                    <div class="inner-col-3-row">
+                        <div id="price-alert-links">
+                          <ul>
+                            <li><a id="price-alert-link"href="#">Price alert</a><a id="fare-chart-link" href="#">Fare charts</a></li>
+                            <li><a id="airline-fees-link"href="#">Airline Fees</a></li>
+                          </ul>
+                          <span id="flex-dates">Flex Dates: <a href="#">3days</a> | <a href="#">Explorer</a></span>
+                        </div>
+                    </div>
+                    <div class="inner-col-3-row">
+                        <div id="price-trend">
+                          <h5>Price Trend</h5>
+                          <div id="graph">
+                            <img src="#" alt="" />
+                          </div>
+                          <div id="price-trend-advice">
+                            <span>Advice: Wait</span>
+                            <span>Confidence: 79%</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="inner-col-3-row">
+                        <h5>Stops</h5>
+                        <div class="checkbox">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                          <span>nonstop</span>
+                          <span>$863</span>
+                        </div>
+                        <div class="checkbox">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                          <span>nonstop</span>
+                          <span>$863</span>
+                        </div>
+                        <div class="checkbox">
+                          <i class="fa fa-check" aria-hidden="true"></i>
+                          <span>nonstop</span>
+                          <span>$863</span>
+                        </div>
+                        <div id="price-matrix-link">
+                          <a href="#">Show airlines/stop price matrix</a>
+                        </div>
+                    </div>
+                    <div class="inner-col-3-row">
+                        <h5>Times</h5>
+                        <div id="take-off-time">
+                          <h6>Take-off New York</h6>
+                          <h6>Tue 2:00p - Wed 12:00a</h6>
+                          <div class="sliding-ruler">
+                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                          </div>
+                          <h6>Take-off New York</h6>
+                          <h6>Tue 2:00p - Wed 12:00a</h6>
+                          <div class="sliding-ruler">
+                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                          </div>
+                          <div id="landing-time">
+                            <a href="#">Show landing times</a>
+                          </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- begin main col-9 -->
+                <div class="col-9">
+                  <!-- begin show flight -->
+                  <div id="show-all-flights">
+                      <span id="number-of-flights">15 of 64 flights</span>
+                      <span id="show-all"><a href="#">show all</a></span>
+                      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                      <span id="sort-by-price">Sort by price(low to high)</span>
+                  </div>
+                  <!-- end show flights -->
+
+                  <!-- begin check rates -->
+                  <div class="main-inner-row" id="check-rates">
+                    <div class="main-inner-col-right">
+                      <!-- begin brand message -->
+                      <div id="brand-message">
+                        <span>ad</span>
+                        <h5>Faster Flights.More Legroom.2 Bags Free</h5>
+                        <img src="#" alt="" />
+                        <p>Save time and money with Icelandair on your way to <br>
+                          Reykjavik
+                        </p>
+                        <span id="icelandair-link">Icelandair.us</span>
+                      </div>
+                      <!-- end brand message -->
+                    </div>
+                    <div class="main-inner-col-left">
+                      <div class="main-inner-col-left-top">
+                          <span>Check Rates</span>
+                          <button class="button-style button-wide" type="button">Select</button>
+                      </div>
+                      <div class="main-inner-col-left-bottom">
+                        <!-- empty offset -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end check rates -->
+
+                  <!-- begin flight 1 -->
+                  <div class="main-inner-row">
+                    <div class="main-inner-col-right">
+                      <div class="icelandair">
+                        <h5>Icelandair</h5>
+                        <div>
+                          <span>JFK</span>
+                          <span class="time-wide">2:10p</span>
+                          <span>KEF</span>
+                          <span>11:40p</span>
+                          <span>5h 30m</span>
+                          <span>nonstop</span>
+                        </div>
+                        <div>
+                          <span>KEF</span>
+                          <span>10:30a</span>
+                          <span>JFK</span>
+                          <span>12:25p</span>
+                          <span>5h 55m</span>
+                          <span>nonstop</span>
+                        </div>
+                      </div>
+                      <div class="iceland-logo">
+                        <img src="#" alt="" />
+                      </div>
+                      <div class="details-fares">
+                        <button class="fares-b" type="button" name="button">Details</button>
+                        <button class="" type="button" name="button">Fares</button>
+                        <span>Economy</span>
+                      </div>
+                      <div class="operating-airline">
+                        <span>Icelandair operates flight 612, 613.</span>
+                      </div>
+                    </div>
+                    <div class="main-inner-col-left">
+                      <div class="main-inner-col-left-top col-left-top-padding">
+                          <!-- begin kayak pricing and select button -->
+                          <div class="price-source">$863</div>
+                          <div class="price-source">KAYAK</div>
+                          <button class="button-style button-wide" type="button">Select</button>
+                          <!-- end kayak pricing and select button -->
+                      </div>
+                      <div class="main-inner-col-left-bottom">
+                        <!-- begin price links -->
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">Orbitz</a></span>
+                          <p class="flight-price"><a href="#">$902</a></p>
+                        </div>
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">CheapTickets.c...</a></span>
+                          <p class="flight-price"><a href="#">$902</a></p>
+                        </div>
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">6 more sites</a></span>
+                          <i class="fa fa-arrow-down" id="travel-sites-arrow" aria-hidden="true"></i>
+                        </div>
+                        <!-- end price links -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end flight 1 -->
+                  <!-- begin flight 2 -->
+                  <div class="main-inner-row">
+                    <div class="main-inner-col-right">
+                      <div class="icelandair">
+                        <h5>Icelandair</h5>
+                        <div>
+                          <span>JFK</span>
+                          <span class="time-wide">2:10p</span>
+                          <span>KEF</span>
+                          <span>11:40p</span>
+                          <span>5h 30m</span>
+                          <span>nonstop</span>
+                        </div>
+                        <div>
+                          <span>KEF</span>
+                          <span>10:30a</span>
+                          <span>JFK</span>
+                          <span>12:25p</span>
+                          <span>5h 55m</span>
+                          <span>nonstop</span>
+                        </div>
+                      </div>
+                      <div class="iceland-logo">
+                        <img src="#" alt="" />
+                      </div>
+                      <div class="details-fares">
+                        <button class="" type="button" name="button">Details</button>
+                        <button class="" type="button" name="button">Fares</button>
+                        <span>Economy</span>
+                      </div>
+                      <div class="operating-airline">
+                        <span>Icelandair operates flight 612, 613.</span>
+                      </div>
+                    </div>
+                    <div class="main-inner-col-left">
+                      <div class="main-inner-col-left-top col-left-top-padding">
+                        <!-- begin kayak pricing and select button -->
+                        <div class="price-source">$863</div>
+                        <div class="price-source">KAYAK</div>
+                        <button class="button-style button-wide" type="button">Select</button>
+                        <!-- end kayak pricing and select button -->
+                      </div>
+                      <div class="main-inner-col-left-bottom">
+                        <!-- begin price links -->
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">Orbitz</a></span>
+                          <p class="flight-price"><a href="#">$902</a></p>
+                        </div>
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">CheapTickets.c...</a></span>
+                          <p class="flight-price"><a href="#">$902</a></p>
+                        </div>
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">6 more sites</a></span>
+                          <i class="fa fa-arrow-down" id="travel-sites-arrow" aria-hidden="true"></i>
+                        </div>
+                        <!-- end price links -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end flight 2 -->
+                  <!-- begin flight 3 -->
+                  <div class="main-inner-row">
+                    <div class="main-inner-col-right">
+                      <div class="icelandair">
+                        <h5>Icelandair</h5>
+                        <div>
+                          <span>JFK</span>
+                          <span class="time-wide">2:10p</span>
+                          <span>KEF</span>
+                          <span>11:40p</span>
+                          <span>5h 30m</span>
+                          <span>nonstop</span>
+                        </div>
+                        <div>
+                          <span>KEF</span>
+                          <span>10:30a</span>
+                          <span>JFK</span>
+                          <span>12:25p</span>
+                          <span>5h 55m</span>
+                          <span>nonstop</span>
+                        </div>
+                      </div>
+                      <div class="iceland-logo">
+                        <img src="#" alt="" />
+                      </div>
+                      <div class="details-fares">
+                        <button class="" type="button" name="button">Details</button>
+                        <button class="" type="button" name="button">Fares</button>
+                        <span>Economy</span>
+                      </div>
+
+                      <div class="operating-airline">
+                        <span>Icelandair operates flight 612, 613.</span>
+                      </div>
+                    </div>
+                    <div class="main-inner-col-left">
+                      <div class="main-inner-col-left-top col-left-top-padding">
+                        <!-- begin kayak pricing and select button -->
+                        <div class="price-source">$863</div>
+                        <div class="price-source">KAYAK</div>
+                        <button class="button-style button-wide" type="button">Select</button>
+                        <!-- end kayak pricing and select button -->
+                      </div>
+                      <div class="main-inner-col-left-bottom">
+                        <!-- begin price links -->
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">Orbitz</a></span>
+                          <p class="flight-price"><a href="#">$902</a></p>
+                        </div>
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">CheapTickets.c...</a></span>
+                          <p class="flight-price"><a href="#">$902</a></p>
+                        </div>
+                        <div class="price-link-style">
+                          <span class="travel-site-links"><a href="#">6 more sites</a></span>
+                          <i class="fa fa-arrow-down" id="travel-sites-arrow" aria-hidden="true"></i>
+                        </div>
+                        <!-- end price links -->
+                      </div>
+                    </div>
+                  </div>
+                    <!-- end of flight 3 -->
+                </div>
+                <!-- end of col 9 -->
+            </div>
+            <!-- end of main row -->
+        </div>
+        <!-- end of main container -->
+    </div>
+    <!-- end of wrapper   -->
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/01ec0f5b81.js"></script>
+    <!-- jquery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

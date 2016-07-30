@@ -1,0 +1,440 @@
+/* default the tags */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+div { border: 1px solid black; }
+
+p { border: 1px solid black; }
+
+span { border: 1px solid black; }
+
+/*input { border: 1px solid black; }*/
+
+/*i { border: 1px solid black; }*/
+
+body {}
+
+/*wrapper*/
+div#wrapper {
+  width: 910px;
+}
+/*end of wrapper*/
+
+/*tabs*/
+ul#destinations {
+  list-style: none;
+  width: 910px;
+  height: 42px;
+  background-color: #E9E9E9;
+}
+
+#tab-1 .tab {
+  color: #1D6DCF;
+}
+
+#tab-2 .tab {
+  color: #333333;
+  background-color: #F7F7F7;
+}
+
+div.tab {
+  height: 42px;
+  padding: 3px;
+}
+
+ul#destinations li {
+  display: inline-block;
+}
+
+ul#destinations li#offset {
+  width: 16px;
+}
+
+/*tab 1 and 2*/
+div.flight-date {
+  border: 1px solid black;
+  margin: 0;
+  padding: 3px 0 0 3px;
+  width: 85px;
+  float: right;
+}
+
+ul.li#tab-1 {
+  margin: 0 0 0 5px;
+}
+
+h6.to-from {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+h6.tab-text-color {
+
+}
+
+div.flight-date span {
+  width: auto;
+  margin: 0;
+  padding: 0,
+}
+/*end of tab 1 and 2*/
+/*end of tabs*/
+
+/*search bar*/
+ul.search {
+  border: 1px solid black;
+  width: 910px;
+  display: block;
+  list-style: none;
+  height: 42px;
+  padding: 0 0 0 0;
+  font-size: 15px;
+  background-color: #F7F7F7;
+}
+
+ul.search li {
+  display: inline-block;
+  border: 1px solid black;
+  /*border around plus sign*/
+  /*margin-top: 10px;*/
+  margin: 8px 0 0 0px;
+  height: 25px;
+  padding-top: 1.5px;
+}
+
+/*li.destinations {
+   width: 190px;
+   text-align: left;
+   padding-left: 3px;
+   margin
+}*/
+
+li#depart-arrive {
+  width: 375px;
+  margin: 0 0 0 19px;
+  padding: 7px 0 0 ;
+  background-color: #FAFAFA;
+}
+
+li#depart-arrive input {
+  /*display: inline-block;*/
+  width: 50%;
+  padding: 0 0 0 3px;
+  height: 25px;
+  background: #FFF;
+  border: 1px solid black;
+
+}
+
+#depart-arrive input#depart {
+  float: left;
+  width: 50%;
+}
+
+#depart-arrive input#arrive {
+  float: left;
+  width: 50%;
+}
+
+input#depart-date, input#arrive-date {
+  width: 40%;
+  height: 18px;
+  background-color: lightgrey;
+}
+
+li#search-date-range {
+  text-align: center;
+  width: 192px;
+  background-color: #FAFAFA;
+}
+
+#search-date-range span {
+  padding: 0 1px 0 1px;
+}
+
+li#amount-of-days {
+  text-align: right;
+  padding-right: 3px;
+  width:260px;
+  color: grey;
+}
+
+button.button-style {
+  width: 95px;
+  padding-bottom: 2px;
+  padding-top: 1.5px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background-color: #E8821B;
+  color: #FFF;
+}
+
+li#plus-sign {
+  margin: 0 0 0 13px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  padding: 3px;
+}
+/*end of search bar*/
+
+/*begin main section*/
+
+/*begin show flights*/
+div.container{
+  width: 910px;
+}
+
+div#show-all-flights {
+  height:47px;
+  padding: 15px;
+  width: 677.5px;
+}
+
+span#number-of-flights {
+  display: inline-block;
+  margin: 0 0 0 6px;
+}
+
+span#show-all {
+  margin: 0 0 0 8px;
+}
+
+span#sort-by-price {
+  float: right;
+  margin: 0 3px 0 0;
+}
+
+i.fa-arrow-down {
+  float:right;
+}
+/*end show flights*/
+
+/*begin check rates and list of flights*/
+div.main-inner-row {
+  height: 175px;
+}
+
+div#check-rates {
+  height: 135px;
+}
+
+div.main-inner-col-right {
+  border: 1px solid black;
+  width: 75%;
+  /*border-left: 1px dotted grey;*/
+  float: right;
+  height: inherit;
+}
+
+#brand-message span {
+  text-align: right;
+  display: block;
+}
+
+#brand-message img {
+  float: right;
+}
+
+span#icelandair-link {
+  display: block;
+  text-align: left;
+}
+
+div.main-inner-col-left {
+  border: 1px solid black;
+  width: 25%;
+  height: inherit;
+}
+
+div.main-inner-col-left-top {
+  height: 50%;
+  text-align: center;
+  display: block;
+  padding: 15px 30px 0 0;
+}
+
+div.main-inner-col-left-top span {
+  margin: 0 0 0 3px;
+}
+
+div.col-left-top-padding {
+  padding: 15px 30px 0 0;
+}
+
+div.price-source {
+  width: 60px;
+  text-align: left;
+  margin: 0 0 0 22px;
+}
+
+button.button-style.button-wide {
+  width: 125px;
+  margin: 9px 0 0 22px;
+}
+
+div.main-inner-col-left-bottom {
+  height: 50%;
+}
+
+div.price-link-style {
+  font-size: 11px;
+}
+
+span.travel-site-links {
+  margin: 5px 0 0 22px;
+  display: inline-block;
+}
+
+p.flight-price {
+  display: block;
+  float: right;
+  margin: 5px 19px 0 0;
+}
+
+i#travel-sites-arrow {
+  margin: 7px 65px 0 0;
+}
+
+div.icelandair {
+  float: right;
+  width: 75%;
+  height: 50%;
+}
+
+span.time-wide {
+  display: inline-block;
+  width: 50.94px;
+  text-align: right;
+  margin: 0 0 0 3px;
+}
+
+div.iceland-logo {
+  height: 50%;
+}
+
+div.details-fares {
+  height: 25%;
+}
+
+div.details-fares span {
+  display: inline-block;
+  float: right;
+}
+
+div.operating-airline {
+  height: 25%;
+}
+
+div.operating-airline span {
+  display: inline-block;
+  float: right;
+}
+
+/*end check rates and list of flights*/
+
+/*begin sidebar*/
+
+.price-alert-links li a {
+  display: inline-block;
+}
+
+.inner-col-3-row h5, .inner-col-3-row i, .inner-col-3-row span, .inner-col-3-row a,
+.inner-col-3-row li a, .inner-col-3-row img, .inner-col-3-row h6,
+.inner-col-3-row div#sliding-ruler {
+  margin: 0 0 0 15px;
+}
+
+/*li a#price-alert-link, li #airline-fees-link, span#flex-dates  {
+  margin: 0 0 0 15px;
+}*/
+
+div#price-trend-advice span, div#price-matrix-link, span#flex-dates {
+  font-size: small;
+}
+
+li a#fare-chart-link {
+  margin:0 0 0 25px;
+}
+
+/*end sidebar*/
+
+/*end main section*/
+
+/*grid*/
+.vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  /*display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;*/
+  display: flex;
+}
+/*end of grid*/
